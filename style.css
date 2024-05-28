@@ -13,3 +13,79 @@ body div div > p {
 .yellow{
     color: yellow;
 }
+.schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.day {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.day:nth-child(1) li { background-color: #ffdddd; }
+.day:nth-child(2) li { background-color: #ddffdd; }
+.day:nth-child(3) li { background-color: #ddddff; }
+.day:nth-child(4) li { background-color: #ffffdd; }
+.day:nth-child(5) li { background-color: #ddffff; }
+
+li:hover {
+    background-color: #ccc;
+}
+
+li:active {
+    background-color: #999;
+}
+
+li:focus {
+    outline: 2px solid #000;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+/* Structural pseudo-classes */
+li:nth-child(even) {
+    font-style: italic;
+}
+
+li:nth-child(odd) {
+    text-decoration: underline;
+}
+
+li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+li:nth-of-type(2) {
+    color: blue;
+}
+
+li:nth-of-type(3) {
+    color: green;
+}
